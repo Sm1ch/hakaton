@@ -12,6 +12,6 @@ class MenuController extends Controller
      */
     public function list(): View
     {
-        return view('test', ['menus' => Menu::all()]);
+        return view('menu', ['menus' => Menu::all()]);
     }
 }

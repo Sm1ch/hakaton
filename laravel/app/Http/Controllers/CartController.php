@@ -13,7 +13,7 @@ class CartController extends Controller
         return view('cart', ['carts' => Cart::query()->where('isClosed', '=', 'false')->get()]);
     }
 
-    public function getOrderList(){
+    public function getOrderList(): View{
         return view('cart',['carts' => Cart::query()->where('isClosed', '=','true')->get()]);
     }
 }
