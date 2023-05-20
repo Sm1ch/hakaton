@@ -32,3 +32,5 @@ Route::get('/', [IndexController::class, 'index']);
 Route::get('/goods', [App\Http\Controllers\GoodsController::class, 'goods']);
 
 Route::get('/getMenu/{id?}', [MenuController::class, 'getMenu'])->name("getMenu");
+
+Route::get('/profile', [App\Http\Controllers\UserController::class, 'profile']);

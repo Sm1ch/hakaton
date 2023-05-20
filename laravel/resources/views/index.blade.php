@@ -14,7 +14,11 @@
             </div>
             <div class="chips">
                 @foreach($menus as $menu)
+<<<<<<< HEAD
                     <a class="chips__btn chips__btn_1 chips__btn_activ" href="{{ route('getMenu',['id' => $menu->id]) }}">{{$menu->name}}</a>
+=======
+                <div class="chips__btn chips__btn_1 chips__btn_activ"> {{ $menu->name }}</div>
+>>>>>>> refs/remotes/origin/main
                 @endforeach
             </div>
 
