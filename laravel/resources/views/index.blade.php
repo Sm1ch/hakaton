@@ -13,14 +13,15 @@
                 <div class="card card_2"></div>
             </div>
             <div class="chips">
+                @foreach($menus as $menu)
                 <div class="chips__btn chips__btn_1 chips__btn_activ">Кофе</div>
-                <div class="chips__btn chips__btn_2">Чай</div>
-                <div class="chips__btn chips__btn_3">Авторскике</div>
-                <div class="chips__btn chips__btn_4">Пончики</div>
+                @endforeach
             </div>
+
             <div class="coffee-cards-box">
+                @foreach($goods as $good)
                 <div class="coffee-card coffee-card_1"></div>
-                <div class="coffee-card coffee-card_2"></div>
+                @endforeach
             </div>
         </div>
     </main>

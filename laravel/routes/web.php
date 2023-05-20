@@ -21,7 +21,7 @@ Route::get('/menu', [MenuController::class, 'list']);
 
 Route::get('/cart', [CartController::class, 'getLast']);
 
-Route::get('/cart/orderlist', [CartController::class, 'getOrderList']);
+Route::get('/cart/orderList', [CartController::class, 'getOrderList']);
 
 Auth::routes();
 
