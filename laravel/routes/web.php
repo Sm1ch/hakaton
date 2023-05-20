@@ -28,3 +28,5 @@ Route::get('/cart/orderlist', [CartController::class, 'getOrderList']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+     
+Route::get('/goods', [App\Http\Controllers\GoodsController::class, 'goods']);
