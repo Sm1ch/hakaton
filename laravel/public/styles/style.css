@@ -45,6 +45,7 @@ ul {
 	column-gap: 5px;
 	margin: 16px 0;
 	justify-content: space-between;
+    top: 0;
 }
 .chips__btn {
 	display: flex;
@@ -394,7 +395,87 @@ color: #000000;
 	}
 }
 
+.profil-header {
+    background: radial-gradient(50% 50% at 50% 50%, #FF9EC2 0%, rgba(255, 255, 255, 0) 188.54%);
+    height: 190px;
+}
+main {
+    position: unset;
+}
+.greating {
 
+    display: flex;
+    justify-content: space-between;
+}
+.greating__contant {
+}
+.greating__title {
+}
+.greating__text {
+}
+.greating__edit {
+}
+.profil {
+}
+.profil-box {
+    position: absolute;
+    top: 133px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+}
+.profil-card {
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05), 0px 4px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+    padding: 16px;
+    margin: 0 16px;
+}
+.profil-card__info {
+    display: flex;
+    flex-direction: column;
+}
+.profil-card__title {
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 20px;
+    color: #292929;
+}
+.profil-card__price {
+    margin: 5px 0 19px 0;
+}
+.profil-card__text {
+}
+.profil-card__qcode {
+}
+
+.profil-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.profil__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 335px;
+    height: 52px;
+    left: 20px;
+    top: 107px;
+    background: #F7F7F5;
+    border-radius: 8px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.icon {
+    width: 7px;
+    height: 14px;
+    background-image: url('../assets/icon/right.png');
+    background-repeat: no-repeat;
+}
 
 
 

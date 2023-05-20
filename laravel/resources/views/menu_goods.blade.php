@@ -20,7 +20,7 @@
 
             <div class="coffee-cards-box">
                 @foreach($goods as $good)
-                <div class="coffee-card coffee-card_1"></div>
+                    <div class="coffee-card coffee-card_1"></div>
                 @endforeach
             </div>
         </div>
