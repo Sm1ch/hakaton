@@ -31,3 +31,5 @@ Route::get('/', [IndexController::class, 'index']);
 
 Route::get('/goods', [App\Http\Controllers\GoodsController::class, 'goods']);
 
+Route::get('/profile', [App\Http\Controllers\UserController::class, 'profile']);
+

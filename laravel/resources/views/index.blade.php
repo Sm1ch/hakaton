@@ -14,7 +14,7 @@
             </div>
             <div class="chips">
                 @foreach($menus as $menu)
-                <div class="chips__btn chips__btn_1 chips__btn_activ">Кофе</div>
+                <div class="chips__btn chips__btn_1 chips__btn_activ"> {{ $menu->name }}</div>
                 @endforeach
             </div>
 
