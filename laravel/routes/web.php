@@ -35,3 +35,6 @@ Route::get('/getMenu/{id?}', [MenuController::class, 'getMenu'])->name("getMenu"
 
 Route::get('/profile', [App\Http\Controllers\UserController::class, 'profile'])->name("profile");
 
+Route::post('/cart',);
+
+Route::get('addItem/{id?}', [CartController::class,'addItem'])->name("addItem");

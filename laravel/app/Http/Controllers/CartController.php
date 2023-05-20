@@ -16,4 +16,8 @@ class CartController extends Controller
     public function getOrderList(): View{
         return view('cart',['carts' => Cart::query()->where('isClosed', '=','true')->get()]);
     }
+    public function addItem(int $goodId): View{
+        dd($goodId);
+//        return view();
+    }
 }

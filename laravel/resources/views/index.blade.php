@@ -22,7 +22,7 @@
 
             <div class="coffee-cards-box">
                 @foreach($goods as $good)
-                <div class="coffee-card coffee-card_1"></div>
+                    <div class="coffee-card coffee-card_1"><a href="{{route('addItem',['id' => $good->id])}}">добавить</a></div>
                 @endforeach
             </div>
         </div>
