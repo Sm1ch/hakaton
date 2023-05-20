@@ -2,7 +2,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
+use App\Models\Menu;
 use Illuminate\View\View;
 
 class MenuController extends Controller
@@ -12,8 +12,6 @@ class MenuController extends Controller
      */
     public function list(): View
     {
-        return view('user.profile', [
-            'user' => User::findOrFail()
-        ]);
+        return view('test', ['menus' => Menu::all()]);
     }
 }
