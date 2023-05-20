@@ -24,15 +24,6 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
-    }
-
+    } 
 }
 
-class PostController extends Controller
-{
-    public function show()
-    {
-        $goods = DB::table('goods')->get();
-        $dump($goods);
-    }
-}
