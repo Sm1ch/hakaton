@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\CartController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +20,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/menu', [MenuController::class, 'list']);
+
+Route::get('/cart', [CartController::class, 'getLast']);
+
+Route::get('/cart/orderlist', [CartController::class, 'getOrderList']);
 
 Auth::routes();
 
