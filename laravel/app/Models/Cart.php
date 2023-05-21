@@ -4,14 +4,21 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Cart extends Model
 {
     use HasFactory;
-    protected $table = 'cart';
+
+    protected $table    = 'cart';
     protected $fillable = [
         'price',
         'userId',
         'isClosed',
-];
+    ];
+
+    public function cartItems(): HasMany
+    {
+        return $this->hasMany(CartItems::class);
+    }
 }

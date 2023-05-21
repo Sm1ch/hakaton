@@ -28,9 +28,13 @@
     <footer class="footer">
         <div class="nav">
             <ul class="nav__list">
-                <li class="nav__item nav__item_icon-home"><a href="" class="nav__link home">Главная</a></li>
+                <li class="nav__item nav__item_icon-home"><a href="/" class="nav__link home">Главная</a></li>
                 <li class="nav__item nav__item_border nav__item_icon-basket"><a href="" class="nav__link basket">Корзина</a></li>
-                <li class="nav__item nav__item_icon-profil"><a href="{{route("profile")}}" class="nav__link profile">Профиль</a></li>
+                @if(auth()->user())
+                    <li class="nav__item nav__item_icon-profil"><a href="{{route("profile")}}" class="nav__link profile">Профиль</a></li>
+                @else
+                    <li class="nav__item nav__item_icon-profil"><a href="{{route("login")}}" class="nav__link profile">Логин</a></li>
+                @endif
             </ul>
         </div>
     </footer>

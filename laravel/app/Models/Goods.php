@@ -5,6 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @param CartItems[] $cartItems
+ */
 class Goods extends Model
 {
     use HasFactory;
