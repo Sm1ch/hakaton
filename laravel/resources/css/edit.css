@@ -1,0 +1,32 @@
+.edit-header {
+    background-image: url('../assets/back.png');
+    background-repeat: no-repeat;
+    height: 303px;
+}
+.form-input {
+    border: none;
+    background: #F2F1F0;
+}
+.form-input_btn {
+    background: #00AAFF;
+}
+.form-input__edit::before {
+    content: '';
+    background-image: url('../assets/icon/exit.png');
+    width: 12px;
+    height: 12px;
+    display: block;
+}
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.back {
+    background-image: url('../assets/back.png');
+}
+h1 {
+    margin: 0;
+    padding-top: 32px;
+}

@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+    <link rel="stylesheet" href="css/style.css">
+
     <header class="header">
         <div class="container">
             <div class="logo-header"></div>

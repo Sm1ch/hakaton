@@ -3,6 +3,7 @@
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\RedactProfileController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -35,6 +36,10 @@ Route::get('/getMenu/{id?}', [MenuController::class, 'getMenu'])->name("getMenu"
 
 Route::get('/profile', [App\Http\Controllers\UserController::class, 'profile'])->name("profile");
 
+
 Route::post('/cart',);
 
 Route::get('addItem/{id?}', [CartController::class,'addItem'])->name("addItem");
+
+Route::get('/editprofile', [App\Http\Controllers\UserController::class, 'editprofile'])->name("editprofile");
+

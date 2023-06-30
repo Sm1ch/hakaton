@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<header class="profil-header">
+
+    <header class="profil-header">
     <div class="container">
         <div class="greating">
             <div class="greating__contant">
@@ -9,7 +10,9 @@
                 <p class="greating__text">{{ $user->email}}</p>
             </div>
             <div class="greating__edit">
+                <a href="{{route("editprofile")}}">
                 <img src="/assets/icon/edit.png" alt="edit_icon">
+                </a>
             </div>
         </div>
     </div>

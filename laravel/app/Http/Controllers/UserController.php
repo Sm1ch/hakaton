@@ -14,4 +14,9 @@ class UserController extends Controller
     {
         return view('profile', ['user' => auth('web')->user()]);
     }
+
+    public function editprofile(): View
+    {
+        return view('edit', ['user' => auth('web')->user()]);
+    }
 }
